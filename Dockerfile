@@ -4,12 +4,12 @@
 #
 # VERSION 0.9.4
 
-FROM ubuntu
+FROM ubuntu:latest
 MAINTAINER Brian Shumate, brian@couchbase.com
 
-ENV CB_VERSION 2.2.0
+ENV CB_VERSION 2.5.1
 ENV CB_BASE_URL http://packages.couchbase.com/releases
-ENV CB_PACKAGE couchbase-server-community_${CB_VERSION}_x86_64.deb
+ENV CB_PACKAGE couchbase-server-enterprise_${CB_VERSION}_x86_64.deb
 ENV CB_DOWNLOAD_URL ${CB_BASE_URL}/${CB_VERSION}/${CB_PACKAGE}
 ENV CB_LOCAL_PATH /tmp/${CB_PACKAGE}
 
